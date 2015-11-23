@@ -1,0 +1,12 @@
+package protobuf;
+
+option java_package = "com.chitu.neo4j.serialization.protobuf";
+option java_outer_classname = "PBResult";
+
+message Item {
+    required int64 id = 1;
+    required string name = 2;
+}
+message Result {
+    repeated Item items = 3;
+}
